@@ -1,0 +1,81 @@
+Descripcion
+	La idea inicial es hacer funcionar un dashboard que contenga laravel vue_js mongodb y hacer crecer el proyecto de forma que este funcione como un nuevo repositorio 
+	interfaces webs y mobiles para lo que se quiera iniciar a modo de aplicaciones.
+	Posiblemente crear con esto un curso full-stack para poner en Udemy. y otras plataformas.
+
+themeselection.com
+url: https://themeselection.com/my-account/
+user: aledaas@gmail.com
+pass: ningunamas1!
+
+repo original: https://github.com/themeselection/materio-vuetify-vuejs-laravel-admin-template
+repo nuestro: 
+usuario 	
+	
+	curso
+		elementos necesarios para instalar previamente : https://gist.github.com/Klerith/c994a32ad825d4e87b9efbfb7174bcaa
+		Juego de pokemon : 
+			API : https://pokeapi.co/
+			
+
+
+	En materio
+			install
+			https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/guide/laravel-integration/installation.html#guide
+		Laravel
+		
+		vuejs 
+			capacitación
+				elementos a instalar para desarrollar con vue_js: https://gist.github.com/Klerith/c994a32ad825d4e87b9efbfb7174bcaa
+				Documentacion oficial de vue: https://vuejs.org/guide/introduction.html
+				Vue CLI (Command Line Interface)
+					Estructura de directorios
+
+						Guía de atajos de Vue.js
+
+						Props https://vuejs.org/guide/components/props.html#prop-validation
+
+						Methods
+
+						Propiedades computadas https://vuejs.org/guide/essentials/computed.html#computed-properties
+
+						Componentes
+
+						Validaciones
+						
+						Watch https://vuejs.org/guide/essentials/watchers.html
+
+						Peticiones HTTP https://vuejs.org/guide/essentials/watchers.html#basic-example
+
+						Ternarios : (es cuando ponemos en una misma linea un if) colocar ejemplo
+
+						Renderizado condicional 
+
+						Estilos globales
+						
+					tests      https://vuejs.org/guide/scaling-up/testing.html#overview
+						Jest https://jestjs.io/
+
+						Expect
+
+						Spies (SpyOn)
+
+						Ciclo de vida de las pruebas
+
+						wrapper
+
+						ShallowMount
+
+						Mount
+
+						Expect
+
+						Snapshot
+
+						Props
+
+						Mocks
+
+						Y más
+				aprender el curso y entender el concepto gral para aplicar en materio.
+				
