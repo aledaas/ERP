@@ -6,6 +6,7 @@
 /storage/*.key
 /vendor
 /public/mix-manifest.json
+docker-compose.yml
 
 .env
 .env.backup
