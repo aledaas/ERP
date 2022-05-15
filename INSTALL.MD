@@ -1,4 +1,4 @@
-# APP WEB RESOFT
+# APP WEB SYSTEMERP
 
 ## Setup
 
@@ -28,9 +28,14 @@ Finally, start the app
 Install composer
 > docker-compose exec app composer install -vvv --prefer-dist
 
-Install nodejs & npm
-> docker-compose exec app apk add --update nodejs-current npm
+Install npm dependencies
+> docker-compose exec app apk npm install
 
+Change permissions for "storage" and "bootstrap/cache" folders
+
+> docker exec -it app chmod -R 777 storage
+
+> docker exec -it app chmod -R 777 bootstrap/cache
 
 Access the application from your browser
 > https://systemerp.local:8081
