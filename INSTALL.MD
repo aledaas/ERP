@@ -1,41 +1,38 @@
-# APP WEB RESOFT
+# APP ERP
 
 ## Setup
 
 ##### Docker
 
-To run this application in Docker, first create a network as follow:
-> docker network create --driver=bridge --subnet=172.11.0.0/16  systemerp
-
-Create docker-compose file from example
-> cp docker-compose.example.yml docker-compose.yml
-
 Set up .env file
 > cp .env.example .env
 
 **Important! Change the DB parameters in the .env file before build the containers**
-Then, build all containers
-> docker-compose build
+
+### Configuring A Bash Alias
+However, instead of repeatedly typing vendor/bin/sail to execute Sail commands, you may wish to configure a Bash alias that allows you to execute Sail's commands more easily:
+
+>alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+>
+
+### Executing Commands and Executing Artisan Commands
+Laravel Artisan commands may be executed using the artisan command:
+> sail artisan queue:work
+>
+> sail php script.php
+>
+> sail composer require laravel/sanctum
+>
+> sail node --version
+>
+> sail npm run prod
 
 
-And customize as needed. Also, configure your /etc/hosts file:
-> 127.0.0.1   systemerp.local
-
-
-Finally, start the app
-> docker-compose up -d
-
-Install composer
-> docker-compose exec app composer install -vvv --prefer-dist
-
-Install nodejs & npm
-> docker-compose exec app apk add --update nodejs-current npm
-
-
-Access the application from your browser
-> https://systemerp.local:8081
-
-
+## Container CLI
+Sometimes you may wish to start a Bash session within your application's container. You may use the shell command to connect to your application's container, allowing you to inspect its files and installed services as well execute arbitrary shell commands within the container:
+>sail shell
+>
+>sail root-shell
 # License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
